@@ -79,7 +79,8 @@
 
     <script src="https://cdn.logwork.com/widget/text.js"></script>
 <a href="https://logwork.com/current-time-in-paysandu-uruguay" class="clock-widget-text" data-timezone="America/Montevideo" data-language="es" data-textcolor="#000000" data-digitscolor="#000000">Paysandú, Uruguay, Paysandú</a>
-  </main>
+<iframe src="https://calendar.google.com/calendar/embed?src=165461e2c6c2864b08b8e3dfc653b45268d1869c166dc42c00f289351e0304c3%40group.calendar.google.com&ctz=America%2FMontevideo" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>  
+</main>
 
   <!-- Bootstrap Bundle JS (dropdown y tooltip) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous" ></script>
