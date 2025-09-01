@@ -76,10 +76,13 @@
 <main class="flex-grow-1 p-4" style="background-color: #f8f9fa; height: 100vh; overflow-y: auto;">
     <h1>Bienvenido, Thiago</h1>
     <p>Este es el contenido principal. Podés empezar a agregar tus dashboards, tarjetas, estadísticas o cualquier funcionalidad aquí.</p>
-</main>
+
+    <script src="https://cdn.logwork.com/widget/text.js"></script>
+<a href="https://logwork.com/current-time-in-paysandu-uruguay" class="clock-widget-text" data-timezone="America/Montevideo" data-language="es" data-textcolor="#000000" data-digitscolor="#000000">Paysandú, Uruguay, Paysandú</a>
+  </main>
 
   <!-- Bootstrap Bundle JS (dropdown y tooltip) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous" ></script>
 
   <!-- Inicialización de tooltips -->
   <script>

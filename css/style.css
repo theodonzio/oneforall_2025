@@ -234,3 +234,7 @@ body{
 .card:hover .card__info-hover {
     opacity: 1;
 }
+
+script{
+        font-family: "Montserrat", sans-serif;
+}
