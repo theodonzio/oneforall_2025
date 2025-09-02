@@ -12,12 +12,16 @@
     overflow-y: auto;
 }
 
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
 #sidebarlogo{
     width: 13rem;
     height: auto;
-    margin-block: 10px;
-    margin-bottom: 30px;
-    margin-top: 20px;
 }
 
 ._icon{
@@ -237,4 +241,10 @@ body{
 
 script{
         font-family: "Montserrat", sans-serif;
+}
+
+ul p{
+    color: #616161;
+    padding: 0px;
+    margin-bottom: 10px;
 }

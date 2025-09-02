@@ -1,86 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>ofav4</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ofav4</title>
+  <!--links de librerias de bootstrap y link a css-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <!--links de los fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
 <body class="d-flex">
-
+<!--sider-->
 <div class="sidebar-wrapper d-flex flex-column flex-shrink-0 p-3 bg-dark" style="width: 280px;">
 
-  <a href="/" class="d-flex align-items-center justify-content-center text-decoration-none">
+<div class="logo">
     <img src="/img/ofalogos/fulltextpositivo.png" id="sidebarlogo">
-  </a>
-
-  <ul class="nav nav-pills flex-column mb-auto">
-    <li class="nav-item">
-      <a href="#" class="nav-link active" aria-current="page">
-        <img src="/img/icons/home_icon.png" class="_icon">
-        Inicio
-      </a>
-    </li>
-        <li>
-      <a href="#" class="nav-link link-light">
-        <img src="/img/icons/timetable_icon.png" class="_icon">
-        Horarios
-      </a>
-    </li>
-    <li>
-      <a href="#" class="nav-link link-light">
-        <img src="/img/icons/inbox_icon.png" class="_icon">
-        Mensajes
-      </a>
-    </li>
-    <li>
-      <a href="#" class="nav-link link-light">
-        <img src="/img/icons/space_icon.png" class="_icon">
-        Espacios
-      </a>
-    </li>
-    <li>
-      <a href="#" class="nav-link link-light">
-        <img src="/img/icons/teach_icon.png" class="_icon">
-        Docentes
-      </a>
-    </li>
-    <li>
-      <a href="#" class="nav-link link-light">
-        <img src="/img/icons/config_icon.png" class="_icon">
-        Configuración
-      </a>
-    </li>
-  </ul>
-
-  <div class="dropdown">
-    <a href="#" class="d-flex align-items-center link-light text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
-      <img src="https://m.media-amazon.com/images/I/51V+1wd2dFL.jpg" alt="User avatar" width="32" height="32" class="rounded-circle me-2">
-      <strong>Thiago Zabala</strong>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
-        <li><a class="dropdown-item" href="#">Perfil</a></li>
-        <li><a class="dropdown-item" href="#">Idioma</a></li>
-        <li><a class="dropdown-item" href="#" id="exit_user"><img src="/img/icons/exit_icon.png" class="_icon">Salir</a></li>
-      </ul>
-  </div>
 </div>
 
+<ul class="nav nav-pills flex-column mb-auto">
+  <p>General</p>
+  <li class="nav-item">
+    <a href="#" class="nav-link active" aria-current="page">
+      <img src="/img/icons/home_icon.png" class="_icon">
+      Inicio
+    </a>
+  </li>
+  <li>
+    <a href="#" class="nav-link link-light">
+      <img src="/img/icons/timetable_icon.png" class="_icon">
+      Horarios
+    </a>
+  </li>
+  <li>
+    <a href="#" class="nav-link link-light">
+      <img src="/img/icons/space_icon.png" class="_icon">
+      Espacios
+    </a>
+  </li>
+  <li>
+    <a href="#" class="nav-link link-light">
+      <img src="/img/icons/teach_icon.png" class="_icon">
+      Docentes
+    </a>
+  </li>
+
+  <p class="mt-3">Tools</p>
+  <li>
+    <a href="#" class="nav-link link-light">
+      <img src="/img/icons/inbox_icon.png" class="_icon">
+      Mensajes
+    </a>
+  </li>
+  <li>
+    <a href="#" class="nav-link link-light">
+      <img src="/img/icons/config_icon.png" class="_icon">
+      Configuración
+    </a>
+  </li>
+</ul>
+
+</div>
 
 <main class="flex-grow-1 p-4" style="background-color: #f8f9fa; height: 100vh; overflow-y: auto;">
     <h1>Bienvenido, Thiago</h1>
     <p>Este es el contenido principal. Podés empezar a agregar tus dashboards, tarjetas, estadísticas o cualquier funcionalidad aquí.</p>
-
-    <iframe src="https://calendar.google.com/calendar/embed?src=165461e2c6c2864b08b8e3dfc653b45268d1869c166dc42c00f289351e0304c3%40group.calendar.google.com&ctz=America%2FMontevideo" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>  
-    <iframe id='my-iframe' 
-src='https://www.opentimeclock.com/app.html?page=company&companyname=your-company-name' 
-allow='geolocation; camera'></iframe>
 </main>
 
   <!-- Bootstrap Bundle JS (dropdown y tooltip) -->
