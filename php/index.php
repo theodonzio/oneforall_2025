@@ -13,7 +13,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
-<body class="d-flex">
+
+  <body class="d-flex">
 <!--sider-->
 <div class="sidebar-wrapper d-flex flex-column flex-shrink-0 p-3 bg-dark" style="width: 280px;">
 
@@ -55,10 +56,30 @@
       Mensajes
     </a>
   </li>
+    <li>
+    <a href="#" class="nav-link link-light">
+      <img src="/img/icons/alert_icon.png" class="_icon">
+      Alertar
+    </a>
+  </li>
   <li>
     <a href="#" class="nav-link link-light">
       <img src="/img/icons/config_icon.png" class="_icon">
       Configuración
+    </a>
+  </li>
+
+  <p class="mt-3">Account</p>
+    <li>
+    <a href="#" class="nav-link link-light">
+      <img src="/img/icons/maleuser_icon.png" class="_icon">
+      Perfil
+    </a>
+  </li>
+      <li>
+    <a href="#" class="nav-link link-light">
+      <img src="/img/icons/exit_icon.png" class="_icon">
+      Salir
     </a>
   </li>
 </ul>
