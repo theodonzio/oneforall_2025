@@ -88,7 +88,7 @@
 
 <main class="flex-grow-1 p-4" style="background-color: #f8f9fa; height: 100vh; overflow-y: auto;">
     <h1>Bienvenido, Thiago</h1>
-    <p>Este es el contenido principal. Podés empezar a agregar tus dashboards, tarjetas, estadísticas o cualquier funcionalidad aquí.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste ipsum aut illum earum soluta officia, expedita nihil assumenda vitae corrupti et, pariatur officiis, aliquid laborum suscipit unde tenetur alias! Voluptas.</p>
 </main>
 
   <!-- Bootstrap Bundle JS (dropdown y tooltip) -->
