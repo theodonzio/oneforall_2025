@@ -7,29 +7,22 @@ dropdownElementList.forEach(function (dropdownToggleEl) {
 // ==========================
 // Reloj en hora de Paysandú
 // ==========================
-const $tiempo = document.querySelector('.tiempo'),
-$fecha = document.querySelector('.fecha');
+// ==========================
+// Reloj en hora de Paysandú
+// ==========================
+const $tiempo = document.querySelector('.tiempo')
 
 function digitalClock(){
-    let f = new Date(),
-    dia = f.getDate(),
-    mes = f.getMonth() + 1,
-    anio = f.getFullYear(),
-    diaSemana = f.getDay();
+    let f = new Date()
 
-    dia = ('0' + dia).slice(-2);
-    mes = ('0' + mes).slice(-2)
-
-    let timeString = f.toLocaleTimeString();
-    $tiempo.innerHTML = timeString;
-
-    let semana = ['DOM','LUN','MAR','MIE','JUE','VIE','SAB'];
-    let showSemana = (semana[diaSemana]);
-    $fecha.innerHTML = `${dia}-${mes}-${anio} ${showSemana}`
+    // Muestra únicamente la hora en formato local
+    let timeString = f.toLocaleTimeString("es-UY", { hour12: false })  
+    $tiempo.innerHTML = timeString
 }
-setInterval(() => {
-    digitalClock()
-}, 1000);
+
+// actualizar cada segundo
+setInterval(digitalClock, 1000)
+digitalClock()
 // ==========================
 // Calendario interactivo
 // ==========================
@@ -43,11 +36,15 @@ function generarCalendario(mes, anio) {
   const primerDiaMes = new Date(anio, mes, 1);
   const ultimoDiaMes = new Date(anio, mes + 1, 0).getDate();
 
-  let html = `<div class="d-flex justify-content-between align-items-center mb-3">
-                <button class="btn btn-outline-primary" id="prevMes">&lt; Anterior</button>
-                <h4 class="m-0">${primerDiaMes.toLocaleString("es-UY", { month: "long", year: "numeric" })}</h4>
-                <button class="btn btn-outline-primary" id="sigMes">Siguiente &gt;</button>
-              </div>`;
+ let html = `
+  <div class="d-flex align-items-center mb-3 w-100">
+    <button class="btn btn-outline-primary" id="prevMes">Anterior</button>
+    <h4 class="flex-grow-1 text-center m-0">
+      ${primerDiaMes.toLocaleString("es-UY", { month: "long", year: "numeric" })}
+    </h4>
+    <button class="btn btn-outline-primary" id="sigMes">Siguiente</button>
+  </div>
+`;
 
   html += `<table class="table table-bordered text-center">`;
   html += `<thead><tr>`;

@@ -89,6 +89,7 @@ main{
     margin: 20px;
     margin-left: 5px;
     border-radius: 20px;
+    background-color: #2b2a2a;
 }
 
 body{
@@ -274,23 +275,21 @@ ul p{
   font-family: 'Share Tech Mono', monospace;
   background: linear-gradient(135deg, #0d6efd, #00c4ff);
   color: #fff;
-  text-align: center;
   border-radius: 16px;
   padding: 30px 20px;
   box-shadow: 0 8px 20px rgba(13,110,253,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* ajustá la altura que quieras */
 }
 
 .reloj .tiempo {
   font-size: 64px;
   font-weight: bold;
   letter-spacing: 2px;
-  margin-bottom: 10px;
-}
-
-.reloj .fecha {
-  font-size: 22px;
-  opacity: 0.9;
-  letter-spacing: 1px;
+  margin: 0;   /* quita márgenes innecesarios */
+  padding: 0;  /* quita el padding que lo bajaba */
 }
 
 /* Ajustes al calendario */
@@ -308,4 +307,29 @@ ul p{
   margin: 0;
   border-radius: 10px;
   overflow: hidden;
+}
+
+.m-0{
+    color: black;
+}
+
+/* Contenedor del reloj: arriba a la derecha */
+.reloj-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+/* Contenedor del calendario: centrado */
+.calendario-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#calendario td.bg-primary {
+  border-radius: 0 !important;   /* quita bordes redondeados */
+  background-color: #0d6efd !important; /* azul Bootstrap */
+  color: #fff !important;
+  font-weight: bold;
 }
