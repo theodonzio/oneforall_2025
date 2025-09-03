@@ -7,20 +7,29 @@ dropdownElementList.forEach(function (dropdownToggleEl) {
 // ==========================
 // Reloj en hora de Paysandú
 // ==========================
-function actualizarReloj() {
-  let opciones = {
-    timeZone: "America/Montevideo",
-    hour: "2-digit",
-    minute: "2-digit",
-    second: "2-digit"
-  };
-  let ahora = new Intl.DateTimeFormat("es-UY", opciones).format(new Date());
-  document.getElementById("reloj").textContent = "Hora en Paysandú: " + ahora;
-}
+const $tiempo = document.querySelector('.tiempo'),
+$fecha = document.querySelector('.fecha');
 
-// actualizar cada segundo
-setInterval(actualizarReloj, 1000);
-actualizarReloj();
+function digitalClock(){
+    let f = new Date(),
+    dia = f.getDate(),
+    mes = f.getMonth() + 1,
+    anio = f.getFullYear(),
+    diaSemana = f.getDay();
+
+    dia = ('0' + dia).slice(-2);
+    mes = ('0' + mes).slice(-2)
+
+    let timeString = f.toLocaleTimeString();
+    $tiempo.innerHTML = timeString;
+
+    let semana = ['DOM','LUN','MAR','MIE','JUE','VIE','SAB'];
+    let showSemana = (semana[diaSemana]);
+    $fecha.innerHTML = `${anio}-${mes}-${dia} ${showSemana}`
+}
+setInterval(() => {
+    digitalClock()
+}, 1000);
 // ==========================
 // Calendario interactivo
 // ==========================

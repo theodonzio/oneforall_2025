@@ -89,11 +89,16 @@
 <main class="flex-grow-1 p-4" style="background-color: #f8f9fa; height: 100vh; overflow-y: auto;">
     <h1>Bienvenido, Thiago</h1>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste ipsum aut illum earum soluta officia, expedita nihil assumenda vitae corrupti et, pariatur officiis, aliquid laborum suscipit unde tenetur alias! Voluptas.</p>
+<div class="widgets">
+  <!-- Reloj -->
+  <div class="widget-card reloj">
+      <p class="fecha"></p>
+      <p class="tiempo"></p>
+  </div>
 
- <div id="reloj" class="fs-3 fw-bold text-primary"></div>
-<!-- Calendario interactivo -->
-<div id="calendario" class="mt-4"></div>
-  
+  <!-- Calendario -->
+  <div class="widget-card" id="calendario"></div>
+</div>
 </main>
 
   <!-- Bootstrap Bundle JS (dropdown y tooltip) -->
