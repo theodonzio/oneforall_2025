@@ -12,6 +12,10 @@
     overflow-y: auto;
 }
 
+.sidebar-wrapper p{
+    color: #555555;
+}
+
 .logo{
     display: flex;
     align-items: center;
@@ -26,17 +30,6 @@
 
 ._icon{
     width: 30px;
-    height: auto;
-}
-
-#exit_user{
-    display: flex;
-    align-items: center;
-    justify-content: left;
-}
-
-#exit_user img{
-    width: 25px;
     height: auto;
 }
 
@@ -61,28 +54,6 @@
 .nav-link:hover {
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 0.2s ease;
-}
-
-.dropdown{
-    padding: 10px;
-    background-color:#2b2b2b;
-    border-radius: 10px;
-}
-
-.dropdown-menu{
-    width: 100%;
-    margin: 0px;
-    padding: 5px;
-    border-radius: 10px;
-}
-
-.dropdown-menu li{
-    padding: 2px;
-    margin: 0px;
-}
-
-.dropdown-menu-dark{
-    background-color:#2b2b2b;
 }
 
 main{
