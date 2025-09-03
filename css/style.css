@@ -92,6 +92,17 @@ main{
     background-color: #2b2a2a;
 }
 
+/* Quitar scrollbar vertical */
+main::-webkit-scrollbar {
+    display: none; /* Chrome, Edge, Safari */
+}
+
+main {
+    -ms-overflow-style: none;  /* IE y Edge */
+    scrollbar-width: none;     /* Firefox */
+}
+
+
 body{
     background-color:#131313;
 }
