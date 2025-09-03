@@ -3,6 +3,7 @@
     padding: 0px;
     font-family: "Montserrat", sans-serif;
     font-weight: 700 !important;
+    scroll-behavior: smooth;
 }
 
 .sidebar-wrapper {
@@ -90,6 +91,7 @@ main{
     margin-left: 5px;
     border-radius: 20px;
     background-color: #2b2a2a;
+    scroll-behavior: smooth;
 }
 
 /* Quitar scrollbar vertical */
