@@ -89,7 +89,9 @@
 <main class="flex-grow-1 p-4" style="background-color: #f8f9fa; height: 100vh; overflow-y: auto;">
     <h1>Bienvenido, Thiago</h1>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste ipsum aut illum earum soluta officia, expedita nihil assumenda vitae corrupti et, pariatur officiis, aliquid laborum suscipit unde tenetur alias! Voluptas.</p>
-</main>
+
+ <div id="reloj" class="fs-3 fw-bold text-primary"></div>
+  </main>
 
   <!-- Bootstrap Bundle JS (dropdown y tooltip) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous" ></script>
