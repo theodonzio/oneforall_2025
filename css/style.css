@@ -55,6 +55,7 @@
 
 .sidebar-wrapper {
     background-color: #131313 !important;
+    overflow: hidden;
 }
 
 .nav-link:hover {
