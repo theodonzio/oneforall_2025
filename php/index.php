@@ -42,13 +42,13 @@
   <p class="mt-3">Account</p>
     <li>
     <a href="#" class="nav-link link-light">
-      <img src="../img/icons/maleuser_icon.png" class="_icon">
+      <img src="../img/icons/maleuser_icon.png" class="icono">
       Perfil
     </a>
   </li>
       <li>
     <a href="#" class="nav-link link-light">
-      <img src="../img/icons/exit_icon.png" class="_icon">
+      <img src="../img/icons/exit_icon.png" class="icono">
       Salir
     </a>
   </li>
