@@ -1,55 +1,45 @@
-*{
-    margin: 0px;
-    padding: 0px;
+/* ====== Estilos generales ====== */
+* {
+    margin: 0;
+    padding: 0;
     font-family: "Montserrat", sans-serif;
-    font-weight: 700 !important;
-    scroll-behavior: smooth;
 }
 
-.sidebar-wrapper {
+body {
+    background-color: #131313;
+}
+
+/* ====== Barra lateral ====== */
+.barra-lateral {
     position: sticky;
     top: 0;
     height: 100vh;
-    overflow-y: auto;
+    background-color: #131313 !important;
 }
 
-.sidebar-wrapper p{
+.barra-lateral p {
     color: #4d4d4d;
 }
 
-.logo{
+.logo {
     display: flex;
-    align-items: center;
     justify-content: center;
     padding: 20px;
 }
 
-#sidebarlogo{
+#logo-barra {
     width: 13rem;
-    height: auto;
 }
 
-._icon{
+.icono {
     width: 30px;
-    height: auto;
-}
-
-.nav {
-  text-align: left !important;
 }
 
 .nav-link {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: flex-start !important;
-  text-align: left !important;
-  gap: 8px !important;
-  padding-left: 0.75rem !important;
-}
-
-.sidebar-wrapper {
-    background-color: #131313 !important;
-    overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 0.75rem;
 }
 
 .nav-link:hover {
@@ -57,40 +47,22 @@
   transition: background-color 0.2s ease;
 }
 
-main{
-    margin: 20px;
-    margin-left: 5px;
+/* ====== Contenido principal ====== */
+main {
+    margin: 20px 5px;
     border-radius: 20px;
     background-color: #2b2a2a;
-    scroll-behavior: smooth;
+    overflow-y: auto;
 }
 
-/* Quitar scrollbar vertical */
-main::-webkit-scrollbar {
-    display: none; /* Chrome, Edge, Safari */
-}
+/* Quitar scroll visual */
+main::-webkit-scrollbar { display: none; }
+main { scrollbar-width: none; }
 
-main {
-    -ms-overflow-style: none;  /* IE y Edge */
-    scrollbar-width: none;     /* Firefox */
-}
-
-
-body{
-    background-color:#131313;
-}
-
-.widgets {
-  margin: 20px;
-  display: flex;
-  gap: 20px; /* separación entre reloj y calendario */
-  flex-wrap: wrap; /* si la pantalla es chica, que bajen en columna */
-}
-
-.widget-card {
-  flex: 1;
+/* ====== Widgets (reloj y calendario) ====== */
+.tarjeta-widget {
   min-width: 300px;
-  background: #ffffff;
+  background: #fff;
   border-radius: 16px;
   padding: 20px;
   box-shadow: 0px 6px 16px rgba(0,0,0,0.1);
@@ -99,38 +71,26 @@ body{
   align-items: center;
 }
 
-/* Ajustes al reloj dentro de la tarjeta */
+/* Reloj */
 .reloj {
   font-family: 'Share Tech Mono', monospace;
   background: linear-gradient(135deg, #0C6DFD, #00c4ff);
   color: #fff;
-  border-radius: 16px;
   padding: 30px 20px;
   box-shadow: 0 8px 20px rgba(13,110,253,0.3);
-  display: flex;
-  align-items: center;
   justify-content: center;
-  width: 100%; /* ajustá la altura que quieras */
-}
-
-.reloj .tiempo {
-  font-size: 64px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  margin: 0;   /* quita márgenes innecesarios */
-  padding: 0;  /* quita el padding que lo bajaba */
-}
-
-/* Ajustes al calendario */
-#calendario {
   width: 100%;
 }
 
-#calendario h4 {
-  text-transform: capitalize;
+.reloj .hora {
+  font-size: 64px;
   font-weight: bold;
-  text-align: center;
+  letter-spacing: 2px;
 }
+
+/* Calendario */
+#calendario { width: 100%; }
+#calendario h4 { text-align: center; font-weight: bold; }
 
 #calendario table {
   margin: 0;
@@ -138,27 +98,12 @@ body{
   overflow: hidden;
 }
 
-.m-0{
-    color: black;
-}
-
-/* Contenedor del reloj: arriba a la derecha */
-.reloj-container {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 20px;
-}
-
-/* Contenedor del calendario: centrado */
-.calendario-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
 #calendario td.bg-primary {
-  border-radius: 0 !important;   /* quita bordes redondeados */
-  background-color: #0C6DFD !important; /* azul Bootstrap */
+  background-color: #0C6DFD !important;
   color: #fff !important;
   font-weight: bold;
 }
+
+/* Posicionamiento */
+.contenedor-reloj { display: flex; justify-content: flex-end; margin-bottom: 20px; }
+.contenedor-calendario { display: flex; justify-content: center; margin-top: 20px; }
