@@ -39,10 +39,21 @@
     <li><a href="#" class="nav-link link-light"><img src="../img/icons/alert_icon.png" class="icono"> Alertar</a></li>
     <li><a href="#" class="nav-link link-light"><img src="../img/icons/config_icon.png" class="icono"> Configuración</a></li>
 
-    <p class="mt-3">Cuenta</p>
-    <li><a href="#" class="nav-link link-light"><img src="../img/icons/maleuser_icon.png" class="icono"> Perfil</a></li>
-    <li><a href="#" class="nav-link link-light"><img src="../img/icons/exit_icon.png" class="icono"> Salir</a></li>
-  </ul>
+  <p class="mt-3">Account</p>
+    <li>
+    <a href="#" class="nav-link link-light">
+      <img src="../img/icons/maleuser_icon.png" class="_icon">
+      Perfil
+    </a>
+  </li>
+      <li>
+    <a href="#" class="nav-link link-light">
+      <img src="../img/icons/exit_icon.png" class="_icon">
+      Salir
+    </a>
+  </li>
+</ul>
+
 </div>
 
 <!-- Contenido principal -->
