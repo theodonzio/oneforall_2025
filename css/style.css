@@ -15,6 +15,13 @@ body {
     top: 0;
     height: 100vh;
     background-color: #131313 !important;
+    overflow-y: auto; 
+    scrollbar-width: none; /* Firefox: oculta scrollbar */
+}
+
+/* Chrome, Edge, Safari */
+.barra-lateral::-webkit-scrollbar {
+    display: none;
 }
 
 .barra-lateral p {
@@ -89,21 +96,122 @@ main { scrollbar-width: none; }
 }
 
 /* Calendario */
-#calendario { width: 100%; }
-#calendario h4 { text-align: center; font-weight: bold; }
+#calendario { 
+  width: 100%; 
+  background-color: #131313;
+}
+#calendario h4 { 
+  text-align: center; 
+  font-weight: bold; 
+
+}
 
 #calendario table {
   margin: 0;
-  border-radius: 10px;
+  border-radius: 0px;
   overflow: hidden;
+}
+
+td{
+  background-color: #131313 !important;
+  color: white !important;
+}
+
+th{
+  background-color: #131313 !important;
+  color: white !important;
+}
+
+table {
+  background-color: #131313;
 }
 
 #calendario td.bg-primary {
   background-color: #0C6DFD !important;
   color: #fff !important;
   font-weight: bold;
+
 }
 
 /* Posicionamiento */
 .contenedor-reloj { display: flex; justify-content: flex-end; margin-bottom: 20px; }
 .contenedor-calendario { display: flex; justify-content: center; margin-top: 20px; }
+
+/* ====== Responsividad ====== */
+
+/* Pantallas medianas (tablets) */
+@media (max-width: 992px) {
+  .barra-lateral {
+    width: 200px !important;
+  }
+
+  #logo-barra {
+    width: 9rem;
+  }
+
+  .reloj .hora {
+    font-size: 48px;
+  }
+}
+
+/* Pantallas chicas (celulares) */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column; /* Barra lateral arriba */
+  }
+
+  .barra-lateral {
+    position: relative;
+    width: 100% !important;
+    height: auto;
+    flex-direction: row;
+    overflow-x: auto;
+  }
+
+  .barra-lateral ul {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+  }
+
+  .barra-lateral li {
+    flex: 0 0 auto;
+  }
+
+  main {
+    margin: 10px;
+    border-radius: 10px;
+  }
+
+  .contenedor-reloj, 
+  .contenedor-calendario {
+    justify-content: center;
+  }
+
+  .reloj .hora {
+    font-size: 36px;
+  }
+
+  #calendario table {
+    font-size: 0.8rem;
+  }
+}
+
+/* Pantallas muy chicas (< 480px) */
+@media (max-width: 480px) {
+  .reloj .hora {
+    font-size: 28px;
+  }
+
+  #logo-barra {
+    width: 7rem;
+  }
+
+  #calendario table th,
+  #calendario table td {
+    padding: 4px;
+  }
+}
