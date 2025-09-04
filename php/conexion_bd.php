@@ -1,13 +1,18 @@
 <?php
-$servername = "dbitsp.tailff9876.ts.net"; // host del servidor MySQL
-$username   = "OFA";               // usuario MySQL
-$password   = "ofametamate";              // contraseña
-$database   = "OFA";                      // nombre de la base de datos
+// Datos de conexión
+$servidor      = "dbitsp.tailff9876.ts.net";
+$usuario_bd    = "OFA";
+$contrasena_bd = "ofametamate";
+$base_datos    = "OFA";
 
-$conn = new mysqli($servername, $username, $password, $database);
+// Conectar a la base de datos
+$conexion = new mysqli($servidor, $usuario_bd, $contrasena_bd, $base_datos);
 
-if ($conn->connect_error) {
-    die("❌ Conexión fallida: " . $conn->connect_error);
+// Verificar conexión
+if ($conexion->connect_error) {
+    die("Error de conexión: " . $conexion->connect_error);
 }
-echo "✅ Conexión exitosa a la base de datos";
+
+// Usar UTF-8
+$conexion->set_charset('utf8mb4');
 ?>

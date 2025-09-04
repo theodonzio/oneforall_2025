@@ -41,9 +41,9 @@
 
   <p class="mt-3">Account</p>
     <li>
-    <a href="#" class="nav-link link-light">
+    <a href="/php/login/login.php" class="nav-link link-light">
       <img src="../img/icons/maleuser_icon.png" class="icono">
-      Perfil
+      Login
     </a>
   </li>
       <li>

@@ -216,3 +216,46 @@ table {
     padding: 4px;
   }
 }
+
+
+/* ==========================================
+    LOGIN
+  ==========================================*/
+
+
+.cuerpo-login {
+  min-height: 100vh;
+}
+
+.tarjeta-login {
+  background-color: #2b2a2a;
+  border-radius: 20px;
+  box-shadow: 0px 6px 16px rgba(0,0,0,0.4);
+  width: 100%;
+  max-width: 400px;
+  color: white;
+}
+
+#logo-login {
+  width: 10rem;
+}
+
+.titulo-login {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.campo {
+  border-radius: 12px;
+}
+
+.boton-login {
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.mensaje-error {
+  font-size: 0.9rem;
+  text-align: center;
+}
+

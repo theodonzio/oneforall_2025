@@ -56,3 +56,24 @@ function generarCalendario(m, a) {
 }
 
 generarCalendario(mes,anio);
+
+
+/* ==========================================
+    LOGIN
+  ==========================================*/
+
+  document.addEventListener("DOMContentLoaded", () => {
+  const formulario = document.getElementById("formulario-login");
+  const usuario = document.getElementById("usuario");
+  const contrasena = document.getElementById("contrasena");
+  const mensajeError = document.getElementById("mensaje-error");
+
+  formulario.addEventListener("submit", (e) => {
+    mensajeError.textContent = "";
+
+    if (usuario.value.trim() === "" || contrasena.value.trim() === "") {
+      e.preventDefault();
+      mensajeError.textContent = "Por favor, complete todos los campos.";
+    }
+  });
+});
