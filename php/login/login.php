@@ -12,7 +12,7 @@
 
   <div class="tarjeta-login p-4">
     <div class="text-center mb-4">
-      <img src="/img/ofalogos/fulltextpositivo.png" id="logo-login">
+      <img src="../../img/ofalogos/fulltextpositivo.png" id="logo-login">
       <h2 class="mt-3">Iniciar Sesión</h2>
     </div>
 
