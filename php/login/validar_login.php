@@ -1,30 +1,38 @@
 <?php
 session_start();
-include("../conexion_bd.php");
+include("conexion_bd.php"); // $conn ahora existe correctamente
 
-// Evitar acceso directo sin formulario
+// Evitar acceso directo
 if (!isset($_POST['usuario']) || !isset($_POST['contrasena'])) {
     header("Location: login.php");
     exit();
 }
 
-$usuario = $_POST['usuario'];   // Email o cédula
-$contrasena = $_POST['contrasena'];
+$usuario = trim($_POST['usuario']);      // Limpiar espacios
+$contrasena = trim($_POST['contrasena']);
 
-// Buscar usuario en la base de datos
-$sql = "SELECT id_usuario, nombre, apellido, contrasena, id_rol FROM Usuario WHERE email = ? OR cedula = ? LIMIT 1";
-$sentencia = $conexion->prepare($sql);
+// Preparar consulta
+$sql = "SELECT id_usuario, nombre, apellido, contrasena, id_rol 
+        FROM Usuario 
+        WHERE email = ? OR cedula = ? 
+        LIMIT 1";
+
+$sentencia = $conn->prepare($sql);
+if (!$sentencia) {
+    die("Error en la preparación de la consulta: " . $conn->error);
+}
+
 $sentencia->bind_param("ss", $usuario, $usuario);
 $sentencia->execute();
-$sentencia->bind_result($id_usuario, $nombre, $apellido, $contrasena_hash, $id_rol);
+$resultado = $sentencia->get_result();
 
-if ($sentencia->fetch()) {
-    if (password_verify($contrasena, $contrasena_hash)) {
-        // Guardar datos en sesión
-        $_SESSION['id_usuario'] = $id_usuario;
-        $_SESSION['nombre']     = $nombre;
-        $_SESSION['apellido']   = $apellido;
-        $_SESSION['id_rol']     = $id_rol;
+if ($fila = $resultado->fetch_assoc()) {
+    // Comparar contraseña en texto plano
+    if ($contrasena === $fila['contrasena']) {
+        $_SESSION['id_usuario'] = $fila['id_usuario'];
+        $_SESSION['nombre']     = $fila['nombre'];
+        $_SESSION['apellido']   = $fila['apellido'];
+        $_SESSION['id_rol']     = $fila['id_rol'];
 
         header("Location: ../index.php");
         exit();

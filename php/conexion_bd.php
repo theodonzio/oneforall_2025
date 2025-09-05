@@ -1,18 +1,18 @@
 <?php
-// Datos de conexión
-$servidor      = "dbitsp.tailff9876.ts.net";
-$usuario_bd    = "OFA";
-$contrasena_bd = "ofametamate";
-$base_datos    = "OFA";
+// index.php
+$servername = "localhost";
+$username = "OFA";
+$password = "ofametamate";
+$dbname = "db_OFA";
 
-// Conectar a la base de datos
-$conexion = new mysqli($servidor, $usuario_bd, $contrasena_bd, $base_datos);
+// Crear conexión
+$conn = new mysqli($servername, $username, $password, $dbname);
 
 // Verificar conexión
-if ($conexion->connect_error) {
-    die("Error de conexión: " . $conexion->connect_error);
+if ($conn->connect_error) {
+    die("❌ Conexión fallida: " . $conn->connect_error);
 }
-
-// Usar UTF-8
-$conexion->set_charset('utf8mb4');
+echo "✅ Conectado correctamente a la base de datos '$dbname'";
+return $conn;
+//$conn->close();
 ?>
