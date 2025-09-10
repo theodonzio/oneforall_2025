@@ -302,3 +302,24 @@ table {
   top: 0;
   left: 40%;
 }
+
+
+/* ====== DOCENTES ====== */
+.tarjeta-docente {
+  background-color: #2b2a2a;
+  border-radius: 16px;
+  box-shadow: 0px 6px 16px rgba(0,0,0,0.3);
+  color: white;
+  transition: transform 0.2s ease;
+}
+.tarjeta-docente:hover {
+  transform: translateY(-5px);
+}
+
+.foto-docente {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #0C6DFD;
+}
