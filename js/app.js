@@ -77,3 +77,31 @@ generarCalendario(mes,anio);
     }
   });
 });
+
+/* ==========================================
+    DOCENTES
+  ==========================================*/
+
+function agregarDocente() {
+  const contenedor = document.getElementById("lista-docentes");
+  const nuevo = document.createElement("div");
+  nuevo.className = "col-md-4 mb-4";
+  nuevo.innerHTML = `
+    <div class="tarjeta-docente p-3 text-center">
+      <label for="foto-input" class="d-block mb-3">
+        <img src="../img/icons/maleuser_icon.png" class="foto-docente" id="preview-foto">
+      </label>
+      <input type="file" id="foto-input" accept="image/*" style="display:none" onchange="previewFoto(event, this)">
+      <h5 contenteditable="true">Nuevo Docente</h5>
+      <p><strong>Materia:</strong> <span contenteditable="true">Escribir...</span></p>
+      <p><strong>Sexo:</strong> <span contenteditable="true">Escribir...</span></p>
+      <p><strong>Edad:</strong> <span contenteditable="true">0</span> años</p>
+    </div>
+  `;
+  contenedor.appendChild(nuevo);
+}
+
+function previewFoto(event, input) {
+  const img = input.previousElementSibling.querySelector("img");
+  img.src = URL.createObjectURL(event.target.files[0]);
+}
