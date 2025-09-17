@@ -99,7 +99,8 @@ main { scrollbar-width: none; }
 /* Calendario */
 #calendario { 
   width: 100%; 
-  background-color: #1c375f;
+  background-color: black;
+  border-radius: 20px !important;
 }
 
 #calendario h4 { 
@@ -111,31 +112,45 @@ main { scrollbar-width: none; }
 
 h4 {
   text-transform: uppercase !important;
-  color: #76adff !important;
+  color: white !important;
 }
 
 
 #calendario table {
   margin: 0;
-  border-color: #76adff !important;
 }
 
 td{
-  background-color: #1c375f !important;
-  color: #76adff !important;
+  background-color: black !important;
+  margin: 10px;
+  color: white !important;
 }
 
 th{
-  color: #76adff !important;
-  background-color: #1c375f !important;
+  background-color: black !important;
+  color: white !important;
+  margin: 10px;
 }
 
+
 table {
-  background-color: #1c375f;
+  background-color: black;
+  border-radius: 20px !important;
+}
+
+.btn.btn-outline-primary{
+  color: white !important;
+  border-color: white !important;
+}
+
+.btn.btn-outline-primary:hover{
+  color: white !important;
+  border-color: white !important;
+  background-color: #0C6DFD;
 }
 
 #calendario td.bg-primary {
-  background-color: ##76adff !important;
+  background-color: #0C6DFD !important;
   font-weight: bold;
 }
 
