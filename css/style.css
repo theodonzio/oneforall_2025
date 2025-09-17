@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #131313;
+    background-color: #000000;
 }
 
 /* ====== Barra lateral ====== */
@@ -15,7 +15,7 @@ body {
     position: sticky;
     top: 0;
     height: 100vh;
-    background-color: #131313 !important;
+    background-color: #000000 !important;
     overflow-y: auto; 
     scrollbar-width: none; /* Firefox: oculta scrollbar */
 }
@@ -33,6 +33,7 @@ body {
     display: flex;
     justify-content: center;
     padding: 20px;
+    margin-bottom: 10px;
 }
 
 #logo-barra {
@@ -59,7 +60,7 @@ body {
 main {
     margin: 20px 5px;
     border-radius: 20px;
-    background-color: #2b2a2a;
+    background-color: #1f1f1f;
     overflow-y: auto;
 }
 
@@ -82,10 +83,9 @@ main { scrollbar-width: none; }
 /* Reloj */
 .reloj {
   font-family: 'Share Tech Mono', monospace;
-  background: linear-gradient(135deg, #0C6DFD, #00c4ff);
-  color: #fff;
+  background: white;
+  color: #1f1f1f;
   padding: 30px 20px;
-  box-shadow: 0 8px 20px rgba(13,110,253,0.3);
   justify-content: center;
   width: 100%;
 }
@@ -99,39 +99,44 @@ main { scrollbar-width: none; }
 /* Calendario */
 #calendario { 
   width: 100%; 
-  background-color: #131313;
+  background-color: #1c375f;
 }
+
 #calendario h4 { 
   text-align: center; 
   font-weight: bold; 
+  color: black;
 
 }
+
+h4 {
+  text-transform: uppercase !important;
+  color: #76adff !important;
+}
+
 
 #calendario table {
   margin: 0;
-  border-radius: 0px;
-  overflow: hidden;
+  border-color: #76adff !important;
 }
 
 td{
-  background-color: #131313 !important;
-  color: white !important;
+  background-color: #1c375f !important;
+  color: #76adff !important;
 }
 
 th{
-  background-color: #131313 !important;
-  color: white !important;
+  color: #76adff !important;
+  background-color: #1c375f !important;
 }
 
 table {
-  background-color: #131313;
+  background-color: #1c375f;
 }
 
 #calendario td.bg-primary {
-  background-color: #0C6DFD !important;
-  color: #fff !important;
+  background-color: ##76adff !important;
   font-weight: bold;
-
 }
 
 /* Posicionamiento */
@@ -228,7 +233,7 @@ table {
 }
 
 .tarjeta-login {
-  background-color: #2b2a2a;
+  background-color: #1F1F1F;
   border-radius: 20px;
   box-shadow: 0px 6px 16px rgba(0,0,0,0.4);
   width: 100%;
@@ -238,6 +243,7 @@ table {
 
 #logo-login {
   width: 10rem;
+  margin-block: 20px;
 }
 
 .titulo-login {
@@ -249,14 +255,34 @@ table {
   border-radius: 12px;
 }
 
+
+#usuario, #contrasena{
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  padding-block: 10px;
+}
+
+
 .boton-login {
   border-radius: 12px;
   font-weight: bold;
 }
 
+.btn{
+  padding: 10px;
+}
+
 .mensaje-error {
   font-size: 0.9rem;
   text-align: center;
+}
+
+.formulariologin{
+  margin: 10px;
 }
 
 /* ====== Estilo de Espacio ====== */
