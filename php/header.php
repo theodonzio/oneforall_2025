@@ -14,17 +14,16 @@
     <li><a href="#" class="nav-link link-light"><img src="../img/icons/timetable_icon.png" class="icono"> Horarios</a></li>
     <li><a href="#" class="nav-link link-light"><img src="../img/icons/space_icon.png" class="icono"> Espacios</a></li>
     <li><a href="docentes.php" class="nav-link link-light"><img src="../img/icons/teach_icon.png" class="icono"> Docentes</a></li>
+    <li><a href="docentes.php" class="nav-link link-light"><img src="../img/icons/class_icon.png" class="icono"> Grupos</a></li>
 
     <p class="mt-3">Herramientas</p>
-    <li><a href="#" class="nav-link link-light"><img src="../img/icons/inbox_icon.png" class="icono"> Mensajes</a></li>
-    <li><a href="#" class="nav-link link-light"><img src="../img/icons/alert_icon.png" class="icono"> Alertar</a></li>
-    <li><a href="#" class="nav-link link-light"><img src="../img/icons/config_icon.png" class="icono"> Configuración</a></li>
+    <li><a href="#" class="nav-link link-light"><img src="../img/icons/config_icon.png" class="icono">Configuración</a></li>
 
   <p class="mt-3">Account</p>
     <li>
     <a href="../php/login/login.php" class="nav-link link-light">
       <img src="../img/icons/maleuser_icon.png" class="icono">
-      Login
+      Cuenta
     </a>
   </li>
       <li>
