@@ -13,15 +13,18 @@
   <div class="tarjeta-login p-4">
     <div class="text-center mb-4">
       <img src="../../img/ofalogos/fulltextpositivo.png" id="logo-login">
+      <h2 class="mt-3">Iniciar Sesión</h2>
     </div>
 
-    <form action="validar_login.php" method="POST" class="formulariologin">
+    <form action="validar_login.php" method="POST">
       <div class="mb-3">
-        <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Usuario (email o C.I.)">
+        <label for="usuario">Usuario (email o cédula)</label>
+        <input type="text" class="form-control" id="usuario" name="usuario">
       </div>
 
       <div class="mb-3">
-        <input type="password" class="form-control" id="contrasena" name="contrasena" placeholder="Contraseña">
+        <label for="contrasena">Contraseña</label>
+        <input type="password" class="form-control" id="contrasena" name="contrasena">
       </div>
 
       <?php if (isset($_GET['error'])): ?>
@@ -31,5 +34,6 @@
       <button type="submit" class="btn btn-primary w-100">Ingresar</button>
     </form>
   </div>
+
 </body>
 </html>
