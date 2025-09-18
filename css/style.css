@@ -115,7 +115,6 @@ h4 {
   color: white !important;
 }
 
-
 #calendario table {
   margin: 0;
 }
@@ -139,14 +138,13 @@ table {
 }
 
 .btn.btn-outline-primary{
-  color: white !important;
-  border-color: white !important;
+  color: #0C6DFD !important;
+  border-color: #0C6DFD !important;
 }
 
 .btn.btn-outline-primary:hover{
-  color: white !important;
-  border-color: white !important;
   background-color: #0C6DFD;
+  color: white !important;
 }
 
 #calendario td.bg-primary {
