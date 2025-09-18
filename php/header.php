@@ -13,7 +13,7 @@
     </li>
     <li><a href="../php/horarios.php" class="nav-link link-light"><img src="../img/icons/timetable_icon.png" class="icono"> Horarios</a></li>
     <li><a href="../php/espacio.php" class="nav-link link-light"><img src="../img/icons/space_icon.png" class="icono"> Espacios</a></li>
-    <li><a href="../php/docentes.php" class="nav-link link-light"><img src="../img/icons/teach_icon.png" class="icono"> Docentes</a></li>
+    <li><a href="../docentes/docentes.php" class="nav-link link-light"><img src="../img/icons/teach_icon.png" class="icono"> Docentes</a></li>
     <li><a href="../php/grupos.php" class="nav-link link-light"><img src="../img/icons/class_icon.png" class="icono"> Grupos</a></li>
 
     <p class="mt-3">Herramientas</p>
