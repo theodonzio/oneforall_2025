@@ -17,12 +17,6 @@ body {
     height: 100vh;
     background-color: #000000 !important;
     overflow-y: auto; 
-    scrollbar-width: none; /* Firefox: oculta scrollbar */
-}
-
-/* Chrome, Edge, Safari */
-.barra-lateral::-webkit-scrollbar {
-    display: none;
 }
 
 .barra-lateral p {
@@ -63,10 +57,6 @@ main {
     background-color: #1f1f1f;
     overflow-y: auto;
 }
-
-/* Quitar scroll visual */
-main::-webkit-scrollbar { display: none; }
-main { scrollbar-width: none; }
 
 /* ====== Widgets (reloj y calendario) ====== */
 .tarjeta-widget {
@@ -130,7 +120,6 @@ th{
   color: white !important;
   margin: 10px;
 }
-
 
 table {
   background-color: black;
@@ -268,7 +257,6 @@ table {
   border-radius: 12px;
 }
 
-
 #usuario, #contrasena{
   width: 100%;
   box-sizing: border-box;
@@ -341,7 +329,6 @@ table {
   top: 0;
   left: 40%;
 }
-
 
 /* ====== DOCENTES ====== */
 .tarjeta-docente {
